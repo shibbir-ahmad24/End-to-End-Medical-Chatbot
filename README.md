@@ -116,6 +116,10 @@ class CustomFaissRetriever(BaseRetriever):
 
 The End-to-End Medical Chatbot empowers users with instant access to trusted medical information. Whether you're analyzing health reports or simply curious about medical topics, this AI chatbot delivers speed, accuracy, and context – all in a user-friendly experience.
 
+## APP UI
+
+![pic1] (https://github.com/shibbir-ahmad24/End-to-End-Medical-Chatbot/blob/main/Figures/pic1.png)
+
 
 
 
