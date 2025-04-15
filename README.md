@@ -44,7 +44,8 @@ An intelligent, real-time AI chatbot built to deliver accurate, fast, and contex
 
 - dotenv – Secure environment variable handling
 
-📁 Directory Structure
+## 📁 Directory Structure
+
 ```
 .
 ├── app.py                   # Main Streamlit app
@@ -54,4 +55,67 @@ An intelligent, real-time AI chatbot built to deliver accurate, fast, and contex
 │   ├── helper.py            # Embeddings and data loading logic
 │   └── prompt.py            # Prompt template for QA chain
 ```
+
+## 📝 Prompt Template
+
+```
+prompt_template = """
+Use the following pieces of information to answer the user's question.
+If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+Context: {context}
+Question: {question}
+
+Only return the helpful answer below and nothing else.
+Helpful answer:
+"""
+```
+
+## 🧪 Sample Usage
+
+- Upload medical PDF documents to the specified folder.
+
+- Launch the app with ``` streamlit run app.py. ```
+
+- Select a model from the sidebar.
+
+- Ask your question and view accurate, context-aware answers instantly.
+
+## 📦 Installation
+
+```
+pip install -r requirements.txt
+```
+
+Set up your ```.env``` file with:
+```
+GROQ_API_KEY=your_api_key_here
+```
+
+## 🧠 Example Embedding Code Snippet
+
+```
+from langchain_huggingface import HuggingFaceEmbeddings
+
+def download_hugging_face_embeddings():
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    return embeddings
+```
+
+## 🧲 FAISS Retriever Example
+
+```
+class CustomFaissRetriever(BaseRetriever):
+    def _get_relevant_documents(self, query: str) -> list[Document]:
+        query_vector = self.embeddings.embed_query(query)
+        D, I = self.index.search(np.array([query_vector], dtype=np.float32), self.k)
+        return [Document(page_content=self.text_strings[i]) for i in I[0]]
+```
+
+## 📣 Final Thoughts
+
+The End-to-End Medical Chatbot empowers users with instant access to trusted medical information. Whether you're analyzing health reports or simply curious about medical topics, this AI chatbot delivers speed, accuracy, and context – all in a user-friendly experience.
+
+
+
 
