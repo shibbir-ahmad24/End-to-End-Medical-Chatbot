@@ -4,7 +4,7 @@ An intelligent, real-time AI chatbot built to deliver accurate, fast, and contex
 
 ---
 
-## Live View
+## 🌐 Live View
 
 Check out the live demo of this End-to-End Medical chatbot: [Live Demo](https://end-to-end-medical-chatbot.streamlit.app/).
 
@@ -24,6 +24,8 @@ Check out the live demo of this End-to-End Medical chatbot: [Live Demo](https://
 
 - Interactive Streamlit Interface: A clean, responsive UI for hassle-free interaction.
 
+---
+
 ## 🧠 How It Works
 
 - Data Extraction: PDF files are loaded using PyPDFLoader, then split into manageable text chunks using RecursiveCharacterTextSplitter.
@@ -35,6 +37,8 @@ Check out the live demo of this End-to-End Medical chatbot: [Live Demo](https://
 - Query Retrieval: On user query, relevant document chunks are retrieved using a custom FAISS retriever.
 
 - Answer Generation: Groq LLMs process the context and generate a concise, helpful response.
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -52,6 +56,8 @@ Check out the live demo of this End-to-End Medical chatbot: [Live Demo](https://
 
 - dotenv – Secure environment variable handling
 
+---
+
 ## 📁 Directory Structure
 
 ```
@@ -63,6 +69,8 @@ Check out the live demo of this End-to-End Medical chatbot: [Live Demo](https://
 │   ├── helper.py            # Embeddings and data loading logic
 │   └── prompt.py            # Prompt template for QA chain
 ```
+
+---
 
 ## 📝 Prompt Template
 
@@ -79,6 +87,8 @@ Helpful answer:
 """
 ```
 
+---
+
 ## 🧪 Sample Usage
 
 - Upload medical PDF documents to the specified folder.
@@ -88,6 +98,8 @@ Helpful answer:
 - Select a model from the sidebar.
 
 - Ask your question and view accurate, context-aware answers instantly.
+
+---
 
 ## 📦 Installation
 
@@ -100,6 +112,8 @@ Set up your ```.env``` file with:
 GROQ_API_KEY=your_api_key_here
 ```
 
+---
+
 ## 🧠 Example Embedding Code Snippet
 
 ```
@@ -109,6 +123,8 @@ def download_hugging_face_embeddings():
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     return embeddings
 ```
+
+---
 
 ## 🧲 FAISS Retriever Example
 
@@ -120,9 +136,13 @@ class CustomFaissRetriever(BaseRetriever):
         return [Document(page_content=self.text_strings[i]) for i in I[0]]
 ```
 
+---
+
 ## 📣 Final Thoughts
 
 The End-to-End Medical Chatbot empowers users with instant access to trusted medical information. Whether you're analyzing health reports or simply curious about medical topics, this AI chatbot delivers speed, accuracy, and context – all in a user-friendly experience.
+
+---
 
 ## APP UI
 
