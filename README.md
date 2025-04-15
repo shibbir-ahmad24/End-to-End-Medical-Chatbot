@@ -93,7 +93,7 @@ Helpful answer:
 
 - Upload medical PDF documents to the specified folder.
 
-- Launch the app with ``` streamlit run app.py. ```
+- Launch the app with ``` streamlit run app.py ```
 
 - Select a model from the sidebar.
 
