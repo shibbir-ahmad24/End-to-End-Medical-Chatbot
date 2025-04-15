@@ -144,7 +144,7 @@ The End-to-End Medical Chatbot empowers users with instant access to trusted med
 
 ---
 
-## APP UI
+## 🖥️ App UI
 
 ![pic1](https://github.com/shibbir-ahmad24/End-to-End-Medical-Chatbot/blob/main/Figures/pic1.png)
 
