@@ -2,7 +2,15 @@
 
 An intelligent, real-time AI chatbot built to deliver accurate, fast, and context-aware answers to your medical questions. Powered by Groq's lightning-fast LLMs, FAISS vector database, and Hugging Face embeddings, this chatbot is designed to make navigating through medical data easy, interactive, and insightful.
 
-## 🚀 Live Features
+---
+
+## Live View
+
+Check out the live demo of this End-to-End Medical chatbot: [Live Demo](https://end-to-end-medical-chatbot.streamlit.app/).
+
+---
+
+## 🚀 Features
 
 - Powered by Groq LLMs: Choose from top-tier models like llama-3.3-70b-versatile, deepseek-r1-distill-llama-70b, and gemma2-9b-it for reliable and intelligent responses.
 
@@ -118,7 +126,9 @@ The End-to-End Medical Chatbot empowers users with instant access to trusted med
 
 ## APP UI
 
-![pic1] (https://github.com/shibbir-ahmad24/End-to-End-Medical-Chatbot/blob/main/Figures/pic1.png)
+![pic1](https://github.com/shibbir-ahmad24/End-to-End-Medical-Chatbot/blob/main/Figures/pic1.png)
+
+![pic2](https://github.com/shibbir-ahmad24/End-to-End-Medical-Chatbot/blob/main/Figures/pic2.png)
 
 
 
