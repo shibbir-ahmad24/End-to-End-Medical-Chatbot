@@ -44,4 +44,14 @@ An intelligent, real-time AI chatbot built to deliver accurate, fast, and contex
 
 - dotenv – Secure environment variable handling
 
+📁 Directory Structure
+```
+.
+├── app.py                   # Main Streamlit app
+├── faiss_index.pkl          # Pickled FAISS index and text data
+├── .env                     # Groq API key
+├── src/
+│   ├── helper.py            # Embeddings and data loading logic
+│   └── prompt.py            # Prompt template for QA chain
+```
 
